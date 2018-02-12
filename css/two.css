@@ -1,0 +1,271 @@
+img{
+	border: 0;
+	display: block;
+}
+#two{
+	width: 100%;
+	height: 100vh;
+	background: url('../img/last.png') center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#two .lantern_top {
+    width: 100%;
+    height: 2.45rem;
+    background: url('../img/lantern.png') no-repeat center;
+    background-size: cover;
+}
+#two .logo {
+    width: 2.15rem;
+    height: 1.98rem;
+    margin: 10px auto 0;
+    background: url('../img/lastLOGO.png') no-repeat center;
+    background-size: cover;
+}
+#two .to{
+	width: 4.44rem;
+	height: 3.01rem;
+	margin: 0 auto;
+	margin-top: .56rem;
+	background: url('../img/twoWenzi.png') no-repeat center;
+	background-size: cover;
+}
+#two .couplet{
+	width: 2.71rem;
+	height: 1.02rem;
+	position: absolute;
+	top: 2.3rem;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: top center;
+}
+.top_couplet1{
+	background-image: url('../img/clamp_11.png');
+	
+}
+.bottom_couplet1{
+	background-image: url('../img/clamp_12.png');
+}
+.top_couplet2{
+	background-image: url('../img/clamp_21.png');
+
+}
+.bottom_couplet2{
+	background-image: url('../img/clamp_22.png');
+}
+.top_couplet3{
+	background-image: url('../img/clamp_31.png');
+
+}
+.bottom_couplet3{
+	background-image: url('../img/clamp_32.png');
+}
+#two .top_couplet{
+	left: .16rem;
+}
+#two .bottom_couplet{
+	right: .16rem;
+}
+#two .axis{
+	width: 2.71rem;
+	height: .51rem;
+	position: absolute;
+	left: 0;
+}
+#two .top_axis{
+	top: -.42rem;
+}
+#two .bottom_axis{
+	bottom: -.15rem;
+}
+#two .cloud{
+	width: 100%;
+    height: 4.7rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url('../img/lastCLOUD.png') no-repeat center;
+    background-size: cover;
+}
+#two .menshen{
+	width: 9.56rem;
+	height: 11.12rem; 
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 99;
+}
+#two .caishen{
+	width: 11.97rem;
+	height: 12.64rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 99;
+}
+#two .caishen_center{
+	width: 9.39rem;
+	height: 12.64rem;
+	margin: 0 auto;
+}
+#two .left_er,#two .right_er{
+	position: absolute;
+	top: 2.89rem;
+	width: 3.46rem;
+	height: 1.75rem;
+	z-index: -1;
+}
+#two .left_er{
+	left: 0;
+}
+#two .right_er{
+	right: 0;
+}
+#two .wuguan{
+	width: 9.56em;
+	height: 11.7rem;
+	margin:0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 99;
+}
+#two .wuguan_center{
+	width: 100%;
+	height: 100%;
+}
+#two .wuguan_zer,#two .wuguan_rer{
+	width: 1.6rem;
+	height: 2.76rem;
+	position: absolute;
+	top: .2rem;
+}
+#two .wuguan_zer{
+	left: 0;
+	transform-origin: right bottom;
+}
+#two .wuguan_rer{
+	right: 0;
+	transform-origin: left bottom;
+}
+@keyframes dogRun{
+	0%{
+     transform: translateY(-20rem);
+	}
+	100%{
+     transform: translateY(0rem);
+	}
+}
+@keyframes shake{
+	0%{
+		transform: rotate(0deg) ;
+
+	}
+	25%{
+		transform: rotate(15deg);
+	}
+	50%{
+		transform: rotate(0deg);
+
+	}
+	75%{
+		transform: rotate(-15deg);
+
+	}
+	100%{
+		transform: rotate(0deg);
+
+	}
+}
+@keyframes zhuan{
+	0%{
+     transform: rotateX(0);
+	}
+	100%{
+     transform: rotateX(360deg);
+	}
+}
+@keyframes coupHeight{
+	0%{
+		height: 1.02rem;
+	}
+	100%{
+		height: 13.5rem;
+	}
+}
+@keyframes lerRun{
+	0%{
+		transform: rotate(0deg) ;
+
+	}
+	25%{
+		transform: rotate(15deg);
+	}
+	50%{
+		transform: rotate(0deg);
+
+	}
+	75%{
+		transform: rotate(-15deg);
+
+	}
+	100%{
+		transform: rotate(0deg);
+
+	}
+}
+@keyframes rerRun{
+	0%{
+		transform: rotate(0deg) ;
+
+	}
+	25%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(0deg);
+
+	}
+	75%{
+		transform: rotate(15deg);
+
+	}
+	100%{
+		transform: rotate(0deg);
+
+	}
+}
+#two.swiper-slide-active .couplet{
+	animation: coupHeight 2s linear forwards;
+}
+#two.swiper-slide-active .bottom_axis{
+	animation: zhuan 1s linear infinite; 
+}
+#two.swiper-slide-active .menshen{
+	animation: dogRun 2.5s ease;
+}
+#two.swiper-slide-active .caishen{
+	animation: dogRun 2.5s ease;
+}
+#two.swiper-slide-active .left_er{
+	animation: lerRun 1.5s linear 2.5s infinite;
+}
+#two.swiper-slide-active .right_er{
+	animation: rerRun 1.5s linear 2.5s infinite;
+
+}
+#two.swiper-slide-active .wuguan{
+	animation: dogRun 2.5s ease;
+}
+#two.swiper-slide-active .wuguan_zer{
+	animation: lerRun 1.5s linear 2.5s infinite;
+}
+#two.swiper-slide-active .wuguan_rer{
+	animation: rerRun 1.5s linear 2.5s infinite;
+}
